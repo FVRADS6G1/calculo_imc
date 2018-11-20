@@ -7,14 +7,16 @@ public class Cliente { //Váriaveis
     public void avaliaImc() {//cálculo imc
         float limite = 25.3f;
         if (this.imc < 18.5)
-            this.imc_texto = "Magro(a)";// resultado se menor que o ideal
+            this.imc_texto = "Magro(a)"+ "\n" + "\n" + "Dica: Seu IMC está abaixo do normal, "
+                    + "\n" + "procure um nutricionista para " + "\n" + "regularizar sua alimentação.";// resultado se menor que o ideal
         if (this.genero.equals("Homem")){// genero do usuario
             limite = 26.11f;
         }
         if ((this.imc >= 18.5) && (this.imc <= limite)) 
             this.imc_texto = "Normal";// resultado ideal
         if (this.imc > limite)
-            this.imc_texto = "Acima do Peso";// resultado acima do ideal
+            this.imc_texto = "Acima do Peso" + "\n" + "\n" + "Dica: Seu IMC está acima do normal, "
+                    + "\n" + "procure praticar exercicíos e " + "\n" + "regularizar sua alimentação.";// resultado acima do ideal
     }
         
     public Cliente (String nome, String genero, float altura, float peso) { // envia dados para classe telaimc
