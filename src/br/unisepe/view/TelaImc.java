@@ -40,6 +40,7 @@ public class TelaImc extends javax.swing.JFrame {
         txtArea.setEditable(false);
         txtArea.setColumns(20);
         txtArea.setRows(5);
+        txtArea.setText("Altura em metros\nutilize ponto(.)ex:\n1.78\n\nPeso em kilos ex:\n80");
         jScrollPane1.setViewportView(txtArea);
 
         jButton1.setText("Calcula IMC");

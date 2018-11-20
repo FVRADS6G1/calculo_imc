@@ -140,6 +140,7 @@
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Altura em metros&#xa;utilize ponto(.)ex:&#xa;1.78&#xa;&#xa;Peso em kilos ex:&#xa;80"/>
           </Properties>
         </Component>
       </SubComponents>
