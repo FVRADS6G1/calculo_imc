@@ -1,23 +1,23 @@
 package br.unisepe.bean;
-public class Cliente {
+public class Cliente { //Váriaveis
     String nome, genero;
     float peso, altura, imc;
     String imc_texto;
     
-    public void avaliaImc() {
+    public void avaliaImc() {//cálculo imc
         float limite = 25.3f;
         if (this.imc < 18.5)
-            this.imc_texto = "Magro(a)";
-        if (this.genero.equals("Homem")){
+            this.imc_texto = "Magro(a)";// resultado se menor que o ideal
+        if (this.genero.equals("Homem")){// genero do usuario
             limite = 26.11f;
         }
         if ((this.imc >= 18.5) && (this.imc <= limite)) 
-            this.imc_texto = "Normal";
+            this.imc_texto = "Normal";// resultado ideal
         if (this.imc > limite)
-            this.imc_texto = "Acima do peso";
+            this.imc_texto = "Acima do Peso";// resultado acima do ideal
     }
         
-    public Cliente (String nome, String genero, float altura, float peso) {
+    public Cliente (String nome, String genero, float altura, float peso) { // envia dados para classe telaimc
         this.nome = nome;
         this.genero = genero;
         this.altura = altura;
@@ -25,7 +25,7 @@ public class Cliente {
         this.imc = peso / (altura * altura);
         this.avaliaImc();
     }
-    public String getImc_texto() {
+    public String getImc_texto() { //get and setters
         return imc_texto;
     }
     
