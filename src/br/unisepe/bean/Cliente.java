@@ -14,7 +14,7 @@ public class Cliente {
         if ((this.imc >= 18.5) && (this.imc <= limite)) 
             this.imc_texto = "Normal";
         if (this.imc > limite)
-            this.imc_texto = "Gordo(a)";
+            this.imc_texto = "Acima do peso";
     }
         
     public Cliente (String nome, String genero, float altura, float peso) {
